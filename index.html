@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link href="fonts/font_stylesheet.css" rel="stylesheet" type="text/css" />
+    <link href="fonts/icomoon/icomoon_style.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+    <section class="musicPlayer_section">
+        <div class="musicPlayer_wrapper">
+            <div class="musicPlayer">
+                <div class="musicPlayer_Album">
+                    <div class="album_img">
+                        <div class="album_img_wrapper">
+                            <img src="images/musicPlayer_Album_img.jpg" alt="musicPlayer_Album_img" />
+                        </div>
+                    </div>
+                    <div class="album_dtls">
+                        <p>Now Playing</p>
+                        <div class="album_dtls_main">
+                            <h2>Purple Haze</h2>
+                            <h4>Jimi Hendrix</h4>
+                            <h6>Woodstock</h6>
+                        </div>
+                        <div class="album_dtls_actions">
+                            <div class="icon_btn">
+                                <em class="icon-icn_like"></em>
+                            </div>
+                            <div class="icon_btn">
+                                <em class="icon-icn_playlist-add"></em>
+                            </div>
+                            <div class="icon_btn">
+                                <em class="icon-icn_share"></em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="musicPlayer_Player">
+                    <div class="player_actions">
+                        <div class="player_actions_left">
+                            <div class="icon_only">
+                                <em class="icon-icn_random"></em>
+                            </div>
+                            <div class="icon_only">
+                                <em class="icon-icn_loop1"></em>
+                            </div>
+                        </div>
+                        <div class="player_actions_center">
+                            <div class="icon_btn">
+                                <em><img src="images/icn_prev.svg" alt="icn_prev" /></em>
+                            </div>
+                            <div class="pause_btn">
+                                <div class="icon_btn">
+                                    <em class="icon-icn_pause"></em>
+                                </div>
+                            </div>
+                            <div class="icon_btn">
+                                <em><img src="images/icn_next.svg" alt="icn_next" /></em>
+                            </div>
+                        </div>
+                        <div class="player_actions_right">
+                            <div class="icon_only">
+                                <em class="icon-icn_loop"></em>
+                            </div>
+                            <div class="icon_only">
+                                <em class="icon-icn_showSettings"></em>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="player_slider">
+                        <div class="slider">
+                            <div class="slider__box">
+                                <span class="slider__btn" id="find"></span>
+                                <span class="slider__color"></span>
+                                <span class="slider__tooltip">50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/custom.js" type="text/javascript"></script>
+    <script>
+        /*  rate slider */
+        const container = document.querySelector(".slider__box");
+        const btn = document.querySelector(".slider__btn");
+        const color = document.querySelector(".slider__color");
+        const tooltip = document.querySelector(".slider__tooltip");
+    </script>
+</body>
+
+</html>
