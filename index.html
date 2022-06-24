@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Assignment</title>
 
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link href="fonts/font_stylesheet.css" rel="stylesheet" type="text/css" />
     <link href="fonts/icomoon/icomoon_style.css" rel="stylesheet" type="text/css" />
@@ -90,24 +92,28 @@
                             <div class="range-slider">
                                 <!-- <div id="tooltip"></div> -->
                                 <span class="left_label">2:01:00</span>
-                                <input id="range" type="range">
+                                <div class="slider_wrapper">
+                                    <input id="range" type="range" class="slider" min="1" max="100" value="50">
+                                </div>
                                 <span class="right_label">4:16:00</span>
+                                <span id="rangevalue"></span>
                             </div>
                         </div>
+
+                        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                        <div class="slidecontainer">
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                            <p>Value: <span id="demo"></span></p>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <script type="text/javascript" src="https://my-body.co/assets/frontend/plugins/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script src="js/custom.js" type="text/javascript"></script>
     <script>
-        /*  rate slider */
-        // const container = document.querySelector(".slider__box");
-        // const btn = document.querySelector(".slider__btn");
-        // const color = document.querySelector(".slider__color");
-        // const tooltip = document.querySelector(".slider__tooltip");
         $(".icon_only , .icon_btn").click(function() {
             $(this).toggleClass("active");
         });
