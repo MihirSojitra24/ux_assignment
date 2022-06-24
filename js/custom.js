@@ -1,5 +1,17 @@
-/*  rate slider */
-const container = document.querySelector(".slider__box");
-const btn = document.querySelector(".slider__btn");
-const color = document.querySelector(".slider__color");
-const tooltip = document.querySelector(".slider__tooltip");
+var slider = document.getElementById("range");
+var output = document.getElementById("rangevalue");
+output.innerHTML = slider.value;
+
+function updateGradient(rangeValue) {
+    const percentage = (rangeValue - slider.min) / (slider.max - slider.min) * 100;
+    slider.style.setProperty('--percentage', percentage + '%');
+}
+
+// Update gradient onload
+updateGradient(slider.value);
+
+// Update gradient oninput
+slider.addEventListener('input', (e) => {
+    output.innerHTML = e.target.value;
+    updateGradient(e.target.value);
+});
